@@ -49,14 +49,14 @@
 # print(a+b) # 형변환 후 연산을 해야 정수형으로 계산된다
 
 # # 한번에 정수화 시키기 - map
-# a,b = map(int, input("숫자로 입력하세요: ").split())
+a,b = map(int, input("숫자로 입력하세요: ").split())
 # print(a+b) # 덧셈 - 5+2
 # print(a-b) # 뺄셈 - 5-2
 # print(a*b) # 곱 - 5*2
-# print(a/b) # 나누기 - 5/2 = 2.5
-# print(a//b) # 몫 - 5//2 = 2
-# print(a%b) # 나머지 - 5%2 = 1
-# print(a**b) # 제곱 - 5x5 = 25
+print(a/b) # 나누기 - 5/2 = 2.5
+print(a//b) # 몫 - 5//2 = 2
+print(a%b) # 나머지 - 5%2 = 1
+print(a**b) # 제곱 - 5x5 = 25
 
 # # 실수 정수 사칙연산 - 실수 + 정수는 실수타입 (더 컨범위의 형으로 연산 결과가 나온다)
 # a=4.3
@@ -183,24 +183,24 @@
 """
 # # 5. 반복문을 이용한 문제풀이 ***************************************
 """
-# # 1) 1 부터 N까지 홀수 출력하기
-# a = int(input())
-# for i in range(1,a+1):
-#     if i%2==1:
-#         print(i)
-#
-# # 2) 1 부터 N까지의 합 구하기
-# n = int(input())
-# sum = 0
-# for i in range(1, n+1):
-#     sum += i
-# print(sum)
+# 1) 1 부터 N까지 홀수 출력하기
+a = int(input())
+for i in range(1,a+1):
+    if i%2==1:
+        print(i)
 
-# # 3) N의 약수 출력하기 - end 줄바꿈 없이 옆으로 나열 출력
-# k = int(input())
-# for i in range(1, k+1):
-#     if k%i==0:
-#         print(i, end=' ')
+# 2) 1 부터 N까지의 합 구하기
+n = int(input())
+sum = 0
+for i in range(1, n+1):
+    sum += i
+print(sum)
+
+# 3) N의 약수 출력하기 - end 줄바꿈 없이 옆으로 나열 출력
+k = int(input())
+for i in range(1, k+1):
+    if k%i==0:
+        print(i, end=' ')
 
 """
 # # 6. 중첩 반복문 *********************************************
