@@ -28,3 +28,34 @@
 
 ![image](https://user-images.githubusercontent.com/73453283/221763168-bf0b52b1-e3d3-4f65-b0d6-e604a7b85fce.png)
 
+### 시간 측정
+```python
+import time
+start_time = time.time()
+end_time = time.time()
+print("time: ", end_time - start_time)
+```
+
+<br>
+<br>
+
+# 알고리즘
+
+---
+### 큐 Queue
+- 입력 된 데이터가 가장 먼저 출력되는 구조 
+- FIFO(First In, First Out)
+
+### 스택 Stack
+- 스택은 나중에 입력 된 데이터가 먼저 출력되는 구조 
+- LIFO(Last In, First Out)
+  - push() : 맨뒤에 집어넣음
+  - pop() : 맨 앞부분 꺼내고 반환 (제거 후 반환)
+  - size(): 큐의 길이 반환
+  - empty(): 큐가 비어있는지 유무 반환
+  - front(): 큐의 맨앞 부분 원소 반환
+  - back(): 큐의 맨뒷부분 원소 반환 (제거하지 않고 반환함)
+
+### 그리디 Greedy
+* 현재 상황에서 지금 당장 좋은것만 고르는 방법
+* 그리디 알고리즘 문제는 자주 정렬 알고리즘과 짝을 이뤄 출제된다 
