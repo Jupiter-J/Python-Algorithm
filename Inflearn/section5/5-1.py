@@ -44,17 +44,45 @@ a[-6:-3] = 끝에서 6위치 포함하지 않고 끝에서 3위치 까지 {4,5,6
 # print(res)
 
 
-num, n = map(int, input().split())
-num = list(map(int, str(num)))
-stack=[]
+# num, n = map(int, input().split())
+# num = list(map(int, str(num)))
+# stack=[]
+#
+# for x in num:
+#     while stack and n>0 and stack[-1] < x:
+#         stack.pop()
+#         n-=1
+#     stack.append(x)
+# if n!=0:
+#     stack=stack[:-n]
+# for x in stack:
+#     print(x, end='')
 
-for x in num:
-    while stack and n>0 and stack[-1] < x:
+
+
+"""
+가장 큰수 
+
+"""
+
+n, m = map(int, input().split())
+n = list(map(int, str(n))) #하나씩 접근하기 위해 string변환
+stack = []
+
+for x in n:
+    while stack and m>0 and stack[-1]<x:
         stack.pop()
-        n-=1
+        m-=1
     stack.append(x)
-if n!=0:
-    stack=stack[:-n]
-for x in stack:
-    print(x, end='')
+    if m!=0:
+        stack=stack[:-m]
+    res=''.join(map(str, stack))
+    print(res)
+
+
+
+
+
+
+
 
