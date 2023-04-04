@@ -94,6 +94,11 @@ print("time: ", end_time - start_time)
   - heapq.heapify(x) : 리스트 x를 즉각적으로 heap으로 변환함 (in linear time, O(N) )
 <br>
 
+## 재귀함수 DFS
+
+
+<br>
+
 ## Python 리스트 자료형 정리
 
 ---
