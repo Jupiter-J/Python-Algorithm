@@ -10,20 +10,36 @@
 
 # n 노드 갯수,  m 간선 갯수
 # g 인접 행렬
-n, m = map(int, input().split())
-g= [[0]*(n+1) for _ in range(n+1)]
-
+# n, m = map(int, input().split())
+# g= [[0]*(n+1) for _ in range(n+1)]
+#
 """
 무방향 인접행렬
 m개의 간선의 정보가 들어온다 
 ==> 노드가 갈 수 있는 정보를 알려줌 
 """
+# for i in range(m):
+#     a, b= map(int, input().split())
+#     g[a][b]=1
+#     g[b][a]=1
+#
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         print(g[i][j], end=' ')
+#     print()
+
+
+
+n,m = map(int, input().split())
+g = [[0]*(n+1) for _ in range(n+1)]
+
 for i in range(m):
-    a, b= map(int, input().split())
-    g[a][b]=1
-    g[b][a]=1
+    a,b,c= map(int, input().split())
+    g[a][b]=c
+
 
 for i in range(1, n+1):
     for j in range(1, n+1):
         print(g[i][j], end=' ')
     print()
+
