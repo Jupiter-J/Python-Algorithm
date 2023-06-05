@@ -1,6 +1,9 @@
 
 """
 카펫
+yellow = wh
+brown = (w+2)(h+2)-wh
+brown = 2x + 2y +4
 """
 def solution(brown, yellow):
     s = brown * yellow
