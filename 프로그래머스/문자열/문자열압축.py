@@ -17,11 +17,11 @@ for x in range(1, len(s) // 2 + 1):
     #반복된 문자열 찾기(접차 증가)
     for i in range(0, len(s) + 1, x):
         tmp = s[i:i + x]
-        #중복문자 확인
         if char == tmp:
             cnt += 1
         elif char != tmp:
             char_len += len(tmp)
+            #반복 문자 확인
             if cnt > 1:
                 char_len += len(str(cnt))
             cnt = 1
