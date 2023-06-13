@@ -23,5 +23,4 @@ def solution(s):
         if bracket(s):
             answer +=1
     return answer
-
 print(solution(s))
