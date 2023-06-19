@@ -1,16 +1,18 @@
 
 """
-홀수인 빈도수가 2개이상이면 안된다
+홀수 갯수가 있을 때만 len(s)-cnt +1
 """
-
-from collections import defaultdict,Counter
+from collections import Counter
 def solution(s):
-    cnt = 0
     dF = Counter(s)
+    cnt = 0
     for key in dF:
         if dF[key] %2 ==1:
-            cnt +=1
-    return cnt <=1
+            cnt+=1
+    return len(s)-cnt +1 if cnt >0 else len(s)
+
+
+
 
 print(solution("abacbaa"))
 # print(solution("abaaceeffkckbaa"))
