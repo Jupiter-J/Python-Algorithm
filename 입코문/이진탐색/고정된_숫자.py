@@ -9,6 +9,7 @@ O(nlogn) >O(N) > O(logN)
 def solution(nums):
     left = 0
     right = len(nums)-1
+    #마지막 같아졌을 때 정확도를 살펴야 할 경우
     while left <= right:
         mid = (left+right)//2
         if nums[mid] == mid:
