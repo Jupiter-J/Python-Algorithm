@@ -25,7 +25,7 @@ def solution(N, number):
         if number in li[i]:
             answer = i+1
             break
-    # print(li)
+    print(li)
     return answer
 
 print(solution(5, 12))
