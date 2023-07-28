@@ -20,3 +20,11 @@ for check in m_arr:
         answer.append("NO")
 print(' '.join(answer))
 
+
+"""
+DFS
+"""
+
+def binary_serach
+
+

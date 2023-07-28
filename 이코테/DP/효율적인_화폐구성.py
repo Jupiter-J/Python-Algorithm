@@ -6,8 +6,8 @@
 3
 """
 
-n, m = map(int, input().split())
-coin = []
+n, m = map(int, input().split())  # 2, 5
+coin = [] #   [2,3]
 for i in range(n):
     a= int(input())
     coin.append(a)
@@ -15,8 +15,8 @@ for i in range(n):
 d=[10001]*(m+1)
 d[0]=0 # 아무것도 사용 안할경우 = 0
 
-for i in range(n): #i: 화폐단위
-    for j in range(coin[i], m+1) :  #j: 각각의금액
+for i in range(n): #i: 화폐단위 0-2
+    for j in range(coin[i], m+1) :  #j: 각각의금액 2-5
         if d[j-coin[i]]!= 10001: #INF가 아니면 만들 수 있는 값이다
             """
             i = 0~2 => i=0, coin[0]=2
