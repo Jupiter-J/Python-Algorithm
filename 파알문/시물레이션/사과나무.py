@@ -10,17 +10,20 @@
 
 n = int(input())
 graph = [list(map(int, input().split())) for _ in range(n)]
-
-answer = 0
+answer=0
 lt=rt=n//2
 for i in range(n):
-    for j in range(lt, rt+1): #변수를 사용해 열 범위 지정하기
+    for j in range(lt, rt+1):
         answer += graph[i][j]
-    if i<n//2: #x축을 중앙선으로 두어 열 범위 넓히기
+    if i <n//2:
         lt-=1
         rt+=1
-    else:      #x축을 중앙선으로 두어 열 범위 좁히기
+    else:
         lt+=1
         rt-=1
+
 print(answer)
+
+
+
 
