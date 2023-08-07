@@ -20,7 +20,11 @@ print(arr2) # [[802], [743], [457], [539]]
 """
 
 k, n = map(int, input().split())
-arr = []
-for _ in range(k):
-    s = int(input())
-    arr.append(s)
+# arr = []
+# for _ in range(k):
+#     s = int(input())
+#     arr.append(s)
+
+array = [int(input()) for _ in range(k)]
+
+print(array)
