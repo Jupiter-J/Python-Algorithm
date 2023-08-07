@@ -5,26 +5,29 @@
 743
 457
 539
-
-k, n = map(int, input().split())
-#1. 방법 - for문 [802, 743, 457, 539]
-arr = []
-for _ in range(k):
-    s = int(input())
-    arr.append(s)
-#2. 방법 - 리스트 컨프리헨션 [[802], [743], [457], [539]]
-arr2 = [list(map(int, input().split())) for _ in range(4)]
-
-print(arr) # [802, 743, 457, 539]
-print(arr2) # [[802], [743], [457], [539]]
 """
 
+def Count(len):
+    cnt=0
+    for x in arr: #전체 랜선 갯수 구하기
+        cnt+=(x//len)
+    return cnt
+
 k, n = map(int, input().split())
-# arr = []
-# for _ in range(k):
-#     s = int(input())
-#     arr.append(s)
+arr = [int(input()) for _ in range(k)]
+arr.sort(reverse=True)
 
-array = [int(input()) for _ in range(k)]
+lt=1
+rt=arr[0]
 
-print(array)
+while lt<=rt:
+    mid = (lt+rt)//2
+    if Count(mid)>=n:
+        answer=mid
+        lt=mid+1 #랜선의 최대길이를 구해야함으로 lt를 늘린다
+    else:
+        rt=mid-1
+
+print(answer)
+
+
