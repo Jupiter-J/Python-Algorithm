@@ -7,8 +7,8 @@ input = sys.stdin.readline
 from collections import deque
 
 n, m = map(int, input().split())
-prince = [n for n in range(1, n+1)]
-prince = list(range(1, n+1))
+#prince = [n for n in range(1, n+1)]
+prince  = list(range(1, n+1))
 prince=deque(prince)
 
 while prince:
